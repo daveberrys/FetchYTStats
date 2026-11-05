@@ -26,12 +26,12 @@ Using the GitHub Workflow that runs an hour per day and a python script, it'll w
   - **2.1.1** Click on share channel, and then click "Copy Channel ID"
 - **2.2** On your Channel ID, replace `UCxx_` to `UUxx_`.
 
-### 3. Fork the GitHub repository, and add variables.
+### 3. Fork the GitHub repository, and add secrets.
 - **3.1** Fork the GitHub repository.
 - **3.2** Once forked, click at the top "Settings".
   - **3.2.1** In the sidebar, scroll down until you see "Secrets and variables", and click on "Actions"
-  - **3.2.2** Switch to "Variables" tab, and click "New Repository variable". You might need to middle click for this one since you need three.
-  - **3.2.3** Once you're in the "New Variable" screen, put the variable name as `GOOGLE_API_KEY` and put in your Google API Key, and then "Add Variable".
+  - **3.2.2** Click "New Repository Secret". You will need 3 variables.
+  - **3.2.3** Once you're in the "New Secret" screen, put the variable name as `GOOGLE_API_KEY` and put in your Google API Key, and then "Add Variable".
     - **3.2.3.1** Do this two more times but for `YOUTUBE_CHANNEL_PLAYLIST` and `LIMIT`. I'd reccomend putting `LIMIT` set to 50.
 
 ### Congrats! You're done!
