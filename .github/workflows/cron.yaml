@@ -25,9 +25,9 @@ jobs:
 
       - name: Run script and write JSON file
         env:
-          GOOGLE_API_KEY: ${{ vars.GOOGLE_API_KEY }}
-          YOUTUBE_CHANNEL_PLAYLIST: ${{ vars.YOUTUBE_CHANNEL_PLAYLIST }}
-          LIMIT: ${{ vars.LIMIT }}
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+          YOUTUBE_CHANNEL_PLAYLIST: ${{ secrets.YOUTUBE_CHANNEL_PLAYLIST }}
+          LIMIT: ${{ secrets.LIMIT }}
         run: python src/main.py
 
       - name: Commit and Push
