@@ -2,7 +2,7 @@ name: Update yt-data.json
 
 on:
   schedule:
-    - cron: '* */12 * * *'
+    - cron: '* */1 * * *'
   workflow_dispatch:
 
 permissions:

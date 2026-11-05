@@ -7,7 +7,7 @@ Fetch your youtube stats with;
 - Comment counts
 
 ## How does this work?
-Using the GitHub Workflow that runs 12 hours per day and a python script, it'll write a json file named `yt-data.json`, commit, and push it!
+Using the GitHub Workflow that runs an hour per day and a python script, it'll write a json file named `yt-data.json`, commit, and push it!
 
 ## How do I set it up?
 
