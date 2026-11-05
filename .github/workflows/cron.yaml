@@ -24,6 +24,10 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run script and write JSON file
+        env:
+          GOOGLE_API_KEY: ${{ vars.GOOGLE_API_KEY }}
+          YOUTUBE_CHANNEL_PLAYLIST: ${{ vars.YOUTUBE_CHANNEL_PLAYLIST }}
+          LIMIT: ${{ vars.LIMIT }}
         run: python src/main.py
 
       - name: Commit and Push

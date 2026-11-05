@@ -8,7 +8,7 @@ load_dotenv()
 
 api_key = os.getenv("GOOGLE_API_KEY")
 yt_channel = os.getenv("YOUTUBE_CHANNEL_PLAYLIST")
-videos_limit = os.getenv("LIMIT")
+videos_limit = int(os.getenv("LIMIT", "50"))
 base_url = "https://www.googleapis.com/youtube/v3"
 
 def get_playlist_videos():
